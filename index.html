@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Fossil Is a Lie</title>
+  <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+
+  <header>
+    <nav class="nav-wrap">
+      <div class="logo">
+        <a href="#home">
+          <img src="images/logo.png" alt="Guadalupe Fossils Logo" />
+        </a>
+        <span class="site-title">The Fossil Is a Lie</span>
+      </div>
+      <a href="#" class="menu-toggle">☰</a>
+      <ul class="nav-links">
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div class="welcome-text">
+      <h2>Welcome.</h2>
+      <p>We're glad you're here. It's time to uncover the truth.</p>
+      <a href="#about" class="button">learn more</a>
+    </div>
+
+    <div class="form-container">
+      <h3>Get the proof.</h3>
+      <p>Sign up to receive our exclusive PDF manifesto exposing Big Archaeology.</p>
+      <form>
+        <input type="text" name="name" placeholder="Your name" required/>
+        <input type="email" name="email" placeholder="Email" required/>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="about" class="gallery">
+    <div class="image-card">
+      <img src="images/fake_fossil.jpg" alt="Fake Fossil #1"/>
+      <p>Fake fossil planted near Guadalupe River, 1987.</p>
+    </div>
+    <div class="image-card">
+      <img src="images/guadalupe_mtns_fake_fossil.jpg" alt="Guadalupe Fake Fossil"/>
+      <p>So-called ammonite fossil. Believed to be abnormally large "roly-poly".</p>
+    </div>
+    <div class="image-card">
+      <img src="images/reef_sponge_fossil.jpg" alt="Reef Sponge Fossil"/>
+      <p>Classic reef sponge hoax. Note the mold seams.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Guadalupe River Fossils</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var menuToggle = document.querySelector('.menu-toggle');
+      var navLinks = document.querySelector('.nav-links');
+      menuToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
